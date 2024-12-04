@@ -1,55 +1,37 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Akhil Pasumarthy</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="navbar">
+            <h1 class="logo">akhilpvenkat.dev</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="#">GitHub Contributions</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    
+
     <main>
-        <section id="about" class="section">
-            <h1>About Me</h1>
-            <p>Hello! I'm Akhil Pasumarthy, a student passionate about robotics, engineering, and science competitions.</p>
-        </section>
-
-        <section id="projects" class="section">
-            <h1>Projects</h1>
-            <ul>
-                <li><strong>Science Olympiad Quiz Game</strong>: A fun interactive app about tennis rules and players.</li>
-                <li><strong>FRC Robotics</strong>: Designed and programmed robots for competitions.</li>
-            </ul>
-        </section>
-
-        <section id="skills" class="section">
-            <h1>Skills</h1>
-            <ul>
-                <li>Programming (Python, JavaScript)</li>
-                <li>3D Printing and Prototyping</li>
-                <li>Engineering Design</li>
-            </ul>
-        </section>
-
-        <section id="contact" class="section">
-            <h1>Contact</h1>
-            <p>Email: akhil@example.com</p>
-            <p>LinkedIn: <a href="#">linkedin.com/in/akhilpasumarthy</a></p>
+        <section class="hero">
+            <div class="profile">
+                <img src="profile.jpg" alt="Profile Image" class="profile-img">
+            </div>
+            <h1 class="name">Akhil Pasumarthy</h1>
+            <div class="social-icons">
+                <a href="mailto:akhil@example.com"><img src="email-icon.png" alt="Email"></a>
+                <a href="https://github.com/akhilpasumarthy"><img src="github-icon.png" alt="GitHub"></a>
+                <a href="https://discord.com/"><img src="discord-icon.png" alt="Discord"></a>
+                <a href="https://youtube.com/"><img src="youtube-icon.png" alt="YouTube"></a>
+            </div>
         </section>
     </main>
-
-    <footer>
-        <p>&copy; 2024 Akhil Pasumarthy. All rights reserved.</p>
-    </footer>
 </body>
 </html>
