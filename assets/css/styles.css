@@ -86,10 +86,12 @@ body {
 .name {
     font-size: 3.5rem;
     font-weight: bold;
+    font-family: "Poppins", sans-serif; /* Playful but formal font */
     margin: 20px 0;
     position: relative;
     color: white;
     animation: slideIn 1s ease;
+    text-align: center;
 }
 
 .name::before,
@@ -97,17 +99,20 @@ body {
     content: "";
     position: absolute;
     background: white;
-    height: 2px;
-    width: 80px;
+    left: 50%; /* Centers the lines */
+    transform: translateX(-50%);
 }
 
 .name::before {
-    top: -20px;
-    width: 60px; /* Thinner and shorter top line */
+    top: -30px;
+    height: 1px; /* Thinner top line */
+    width: 150px;
 }
 
 .name::after {
-    bottom: -10px;
+    bottom: -20px;
+    height: 3px; /* Thicker bottom line */
+    width: 200px;
 }
 
 @keyframes slideIn {
@@ -136,23 +141,18 @@ body {
     width: 60px;
     height: 60px;
     border-radius: 15px; /* Rounded square shape */
-    border: 2px solid white; /* White outline */
+    border: 7px solid white; /* White outline */
     background: transparent;
     transition: all 0.3s ease;
 }
 
 .social-icons img {
-    width: 40px;
-    height: 40px;
+    width: 47px;
+    height: 47px;
 }
 
 .social-icons a:hover {
     transform: scale(1.1); /* Slight zoom effect on hover */
-    background: white; /* Inverts the background and icon */
-}
-
-.social-icons a:hover img {
-    filter: brightness(0) invert(1); /* Icon color inverts on hover */
 }
 
 /* Add animation for social icons */
@@ -170,4 +170,3 @@ body {
         opacity: 1;
     }
 }
-
