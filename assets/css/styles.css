@@ -22,6 +22,7 @@ body {
     width: 100%;
     top: 0;
     z-index: 10;
+    animation: fadeInDown 1s ease-out;
 }
 
 .logo {
@@ -40,6 +41,11 @@ body {
     color: white;
     text-decoration: none;
     font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #22e6b1;
 }
 
 /* Hero Section */
@@ -52,6 +58,7 @@ body {
     background: url('background.jpg') no-repeat center center/cover;
     text-align: center;
     padding-top: 100px;
+    animation: fadeIn 2s ease-in;
 }
 
 .profile-img {
@@ -60,21 +67,73 @@ body {
     border-radius: 50%;
     border: 4px solid white;
     margin-bottom: 20px;
+    animation: zoomIn 1.5s ease;
 }
 
 .name {
     font-size: 2.5rem;
     font-weight: bold;
     margin: 20px 0;
+    animation: fadeInUp 1.5s ease-out;
 }
 
 .social-icons {
     display: flex;
     gap: 20px;
+    animation: fadeInUp 2s ease;
 }
 
 .social-icons img {
-    width: 40px;
-    height: 40px;
+    width: 100px;
+    height: 100px;
     cursor: pointer;
+    transition: transform 0.3s ease;
 }
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
