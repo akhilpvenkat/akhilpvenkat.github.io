@@ -85,7 +85,7 @@ body {
 /* Name Section */
 .name {
     font-size: 3.5rem;
-    font-weight: bold;
+    font-weight: 400;
     font-family: "Poppins", sans-serif; /* Playful but formal font */
     margin: 20px 0;
     position: relative;
