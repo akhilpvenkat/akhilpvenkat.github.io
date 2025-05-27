@@ -33,8 +33,12 @@ body {
     color: white;
     animation: slideIn 1s ease;
     text-decoration: none;
-}
 
+}
+.logo:visited{
+    color: inherit; /* or any color you want */
+    text-decoration: none; /* optional, removes underline if desired */
+}
 .nav-links {
     list-style: none;
     display: flex;
