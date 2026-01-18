@@ -4,7 +4,7 @@
 
 <svelte:head>
 	<title>Akhil Pasumarthy</title>
-	<meta name="akhilpvenkat" content="noindex nofollow" />
+	<meta name="akhilpasumarthy" content="noindex nofollow" />
 	<html lang="en" />
 </svelte:head>
 
@@ -15,23 +15,23 @@
 <div class="center">
   
   <div class="profile-container flex flex-row justify-center">
-    <img src="/logo.svg" alt="Profile" class="logo">
+    <img src="/image.png" alt="Profile Picture" class="logo">
     
     <div class="aboutme-container">
       <h1 class="name">
-        akhil pasumarthy
+        Akhil Pasumarthy
       </h1>
-      <p class="ml-1 sm:pt-4 pt-0">
-        Passionate developer and tech enthusiast. I love building creative projects and exploring new technologies.
+      <p class="sm:pt-4 pt-0 text-center">
+        Explaining the world around me using science, technology, and computers.
       </p>
       <div class="icon-container">
-        <a href="mailto:akhil.p.venkat@gmail.com">
+        <a href="mailto:rs.akhil.p.venkat@gmail.com">
           <Icon icon="mdi:mail" class="icon"/>
         </a>
         <a href="https://github.com/akhilpvenkat">
           <Icon icon="mdi:github" class="icon"/>
         </a>
-        <a href="https://www.linkedin.com/in/akhil-pasumarthy">
+        <a href="https://www.linkedin.com/in/akhil-pasumarthy-916379365/">
           <Icon icon="mdi:linkedin" class="icon"/>
         </a>
       </div>
